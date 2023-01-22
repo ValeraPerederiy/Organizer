@@ -1,0 +1,14 @@
+p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    span{
+        margin: 0 20px;
+    }
+    i{
+        font-size: 16px;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+}

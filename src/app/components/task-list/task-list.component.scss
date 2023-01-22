@@ -1,0 +1,48 @@
+.taskList{
+    width: 100%;
+    border:1px solid #000;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    .tasks{
+        margin-top: 10px;
+        span{
+            font-weight: 600;
+        }
+        .task{
+            display:flex;
+            justify-content: space-between;
+            margin:10px 50px;
+            
+            p{
+                font-weight: 600;
+                
+            }
+            button{
+                width:20%
+            }
+        }
+       
+    }
+    
+    input{
+        width: 80%;
+        margin:0 auto;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    button{
+        width: 80%;
+        height: 30px;
+        background-color: #d1578e;
+        font-size: 15px;
+        
+        margin-bottom: 20px;
+        font-weight: 600;
+        transition: all .4s;
+        &:hover{
+            background-color: #9c2e60;
+            cursor:pointer;
+        }
+    }
+}

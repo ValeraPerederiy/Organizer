@@ -1,0 +1,19 @@
+<div class="taskList">
+    <div class="tasks">
+        <span>
+            Selected day: {{date | moment:"DD.MM.YYYY"}}
+        </span>
+        <div class="task"  *ngFor="let task of tasks">
+            <p>
+                {{task.title}}
+            </p>
+            <button (click)="remove(task)">Remove</button>
+        </div>
+       
+    </div>
+    
+    <form [formGroup]="form" (ngSubmit)="addTask()">
+        <input type="text" formControlName="taskText">
+        <button type="submit">Add task</button>
+    </form>
+</div>
